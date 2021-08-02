@@ -6,16 +6,7 @@ class App extends LitElement {
     return html`
       <latt-router>
         <latt-route path="/">
-          home
-        </latt-route>
-        <latt-route path="/asdf">
-          <latt-redirect to="/test" />
-        </latt-route>
-        <latt-route path="/test">
-          test (hello from /asdf!)
-        </latt-route>
-        <latt-route path="/pee">
-          <latt-redirect to="/test" />
+          <app-lander />
         </latt-route>
         <latt-catch to="/" />
       </latt-router>
